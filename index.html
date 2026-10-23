@@ -102,6 +102,20 @@
   .mini-steps li::before{content:counter(m);position:absolute;left:0;top:3px;width:24px;height:24px;border-radius:50%;background:var(--rose-l);color:var(--rose-d);font-family:var(--serif);font-style:italic;font-weight:600;font-size:15px;display:flex;align-items:center;justify-content:center}
   .mini-steps b{display:block;color:var(--ink);font-size:14px}
 
+
+  /* お客様の声 */
+  .voice-lead{text-align:center;font-size:14px;color:var(--sub);margin:-8px 0 26px}
+  .voices{display:grid;gap:20px}
+  .voice{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px 22px;box-shadow:0 8px 22px rgba(212,149,143,.12)}
+  .voice .who{display:inline-block;font-size:11px;font-weight:700;color:var(--rose-d);background:var(--rose-l);padding:3px 14px;border-radius:999px;margin-bottom:10px}
+  .voice h3{font-size:16.5px;line-height:1.7;margin-bottom:14px}
+  .voice dl{margin:0;display:grid;gap:12px}
+  .voice dt{font-size:12px;font-weight:700;color:var(--rose-d)}
+  .voice dd{margin:2px 0 0;font-size:14px}
+  .voice .from{margin-top:16px;padding:14px 16px;background:var(--bg2);border-radius:16px;font-size:13px;color:var(--sub);line-height:1.8}
+  .voice .from b{display:block;font-size:12px;color:var(--rose-d);margin-bottom:2px}
+  .voice-close{text-align:center;font-weight:700;color:var(--rose-d);font-size:15px;margin:30px 0 18px}
+
   /* 流れ */
   .steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
   .steps li{background:var(--card);border-radius:20px;padding:17px 18px 17px 70px;position:relative;counter-increment:s;box-shadow:0 4px 14px rgba(212,149,143,.10)}
@@ -232,8 +246,59 @@
   </div>
 </section>
 
-<!-- 流れ -->
+<!-- お客様の声 -->
 <section>
+  <div class="wrap">
+    <div class="ttl"><span class="en">Voice</span><h2>お客様の声<br>想いを、伝わるカタチに。</h2></div>
+    <p class="voice-lead">住宅・建築の会社様を中心に、SNSとホームページのお手伝いをしています。実際にご依頼いただいた4社様の声をご紹介します。</p>
+    <div class="voices">
+      <article class="voice">
+        <span class="who">千葉県・工務店様</span>
+        <h3>「ほかの仕事に集中できるようになりました」</h3>
+        <dl>
+          <dt>依頼前に困っていたこと</dt><dd>ほかの仕事をしながら、投稿を続けるのが大変でした。投稿のネタにも困っていました。</dd>
+          <dt>依頼してよかったこと</dt><dd>ほかの仕事に集中できるようになりました。</dd>
+        </dl>
+        <p class="from"><b>Boar Bookより</b>Instagramのアカウントとホームページはあったものの、お問い合わせにつながらず、集客にお困りでした。会社様の想いや大切にされていることをお聞きし、それが伝わるように、ホームページの見直しとSNSの投稿を担当しました。その結果、お問い合わせからご契約につながる件数を増やすことができました。</p>
+      </article>
+      <article class="voice">
+        <span class="who">愛知県・建築士様</span>
+        <h3>「簡単な打ち合わせだけで、素敵な投稿を定期的に入れてくれる」</h3>
+        <dl>
+          <dt>依頼前に困っていたこと</dt><dd>SNSを担当していたスタッフが急に辞めてしまい、インスタの更新が止まっていました。キャンペーンの打ち方もまったく分からず困っていたところ、お世話になっている知人の紹介で依頼しました。</dd>
+          <dt>依頼してよかったこと</dt><dd>簡単な打ち合わせだけで、素敵な投稿をほぼ自動的に、定期的に入れてくれたこと。キャンペーンについても、打ち方だけでなく、自分では思いつかないアイデアを提案してくれました。</dd>
+          <dt>こんな会社におすすめです</dt><dd>SNSを戦略的に使いたいけれど、何から始めればいいか分からない。時間がなくて自分ではなかなかできない、アイデアも思いつかない。そんな社長さんに。</dd>
+        </dl>
+        <p class="from"><b>Boar Bookより</b>Instagramの運用から、集客の企画、広告の作成までお手伝いしました。その後、社内のスタッフの方に投稿のやり方をお伝えし、自社で運用できるようになるまでサポートしました。</p>
+      </article>
+      <article class="voice">
+        <span class="who">滋賀県・工務店様</span>
+        <h3>「伝えたいことをくみ取って、写真や文章にしてもらえる」</h3>
+        <dl>
+          <dt>依頼前に困っていたこと</dt><dd>SNSは、自分たちだけではなかなか続けるのが難しかったです。</dd>
+          <dt>依頼してよかったこと</dt><dd>こちらの伝えたいことをくみ取って、写真や文章にしてもらえるので、とても助かっています。自分たちでは思いつかないような見せ方や発信の仕方も提案してもらえて、「なるほど」と思うことも多いです。家づくりのことを、少しずつでも多くの方に知ってもらえるようになったのが、一番よかったと感じています。</dd>
+        </dl>
+        <p class="from"><b>Boar Bookより</b>社長お一人で会社をされていたため、Instagramとホームページの運用を中心にお手伝いしています。イベントや商品のLPの作成も担当しました。Instagramで施工デザインを発信するうちに、そこからお問い合わせが定期的に届くようになりました。</p>
+      </article>
+      <article class="voice">
+        <span class="who">青森県・工務店様</span>
+        <h3>「投稿日の約束を、きちんと守ってくれる」</h3>
+        <dl>
+          <dt>依頼してよかったこと</dt><dd>こちらからの要望(ホームページの更新やSNSの運用)を伝えてから、着手までがとても早く、納得がいくまで対応してくれます。デザイン性が高いところも魅力です。SNSの投稿日など、約束した期日をきちんと守ってくれるので、安心してお任せできています。</dd>
+        </dl>
+        <p class="from"><b>Boar Bookより</b>Instagramのアカウント開設から、運用、ホームページの見直しまでお手伝いしています。最初は会社の方向性がまだあいまいだったため、何度もミーティングを重ねて、ひとつずつ形にしてきました。社長様の「これをやりたい」という想いを、ホームページやLP、Instagramで表現しています。</p>
+      </article>
+    </div>
+    <p class="voice-close">あなたの会社の「想い」も、<br>伝わるカタチにしませんか。<br>まずは3分の無料診断から、気軽にお試しください。</p>
+    <a class="cta" href="https://line.me/R/ti/p/%40kwi2429j">
+      LINE登録で「SNS診断」を受け取る
+      <small>3分・無料 ／ 診断後に改善ヒントをお返しします</small>
+    </a>
+  </div>
+</section>
+
+<!-- 流れ -->
+<section class="pink">
   <div class="wrap">
     <div class="ttl"><span class="en">Flow</span><h2>LINE登録から改善ヒントまで</h2></div>
     <ol class="steps">
