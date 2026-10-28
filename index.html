@@ -60,7 +60,7 @@
   .hero-copy h1 em{font-style:normal;background:linear-gradient(transparent 60%,var(--rose-l) 60%)}
   .hero-copy .lead{margin-top:14px;font-size:14.5px;color:var(--sub)}
 
-  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:28px 0 30px}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:28px 0 30px}
   .stat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px 4px 12px;box-shadow:0 6px 18px rgba(212,149,143,.10)}
   .stat b{display:block;font-family:var(--serif);font-style:italic;font-size:30px;line-height:1.1;color:var(--rose-d)}
   .stat b i{font-style:normal;font-family:var(--sans);font-size:13px;font-weight:700;margin-left:2px}
@@ -116,6 +116,21 @@
   .voice .from b{display:block;font-size:12px;color:var(--rose-d);margin-bottom:2px}
   .voice-close{text-align:center;font-weight:700;color:var(--rose-d);font-size:15px;margin:30px 0 18px}
 
+  /* ブライダル対応・経歴・対応業種 */
+  .also{display:inline-block;margin-top:4px;font-size:13px;font-weight:700;color:var(--rose-d);background:var(--card);border:1px dashed var(--rose);border-radius:14px;padding:8px 14px;line-height:1.7}
+  .career{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .career li{font-size:12px;font-weight:700;color:var(--rose-d);background:var(--rose-l);padding:4px 12px;border-radius:999px}
+  .fields{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px 20px;margin:0 0 20px;font-size:14px}
+  .fields b{display:block;font-size:12px;color:var(--rose-d);margin-bottom:6px}
+  .fields ul{margin:0;padding-left:1.2em}
+  .bridal{margin-top:28px;background:var(--card);border:2px solid var(--rose-l);border-radius:24px;padding:24px 22px;text-align:center}
+  .bridal h3{font-size:17px;margin-bottom:8px}
+  .bridal p{font-size:14px;color:var(--sub);margin-bottom:16px}
+  .bridal .btns{display:grid;gap:10px}
+  .bridal a{display:block;text-decoration:none;font-weight:700;font-size:14.5px;padding:13px 14px;border-radius:999px}
+  .bridal .note-btn{color:var(--rose-d);background:var(--rose-l)}
+  .bridal .line-btn{color:#fff;background:var(--green);box-shadow:0 6px 16px rgba(47,191,113,.25)}
+
   /* 流れ */
   .steps{list-style:none;padding:0;margin:0;display:grid;gap:14px;counter-reset:s}
   .steps li{background:var(--card);border-radius:20px;padding:17px 18px 17px 70px;position:relative;counter-increment:s;box-shadow:0 4px 14px rgba(212,149,143,.10)}
@@ -138,6 +153,7 @@
     .hero-copy h1{font-size:28px}
     .ttl h2{font-size:24px}
     .svc{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(4,1fr)}
   }
 </style>
 <!-- Google tag (gtag.js) -->
@@ -171,11 +187,13 @@
     <span class="badge">住宅・工務店のSNS運用 5年</span>
     <h1>SNSを頑張っているのに、<br>問い合わせにつながらないを、<br><em>やさしい仕組み</em>で変えていく。</h1>
     <p class="lead">住宅・工務店のInstagram運用を5年。30件以上の現場で培った「想いが伝わって、ちゃんと届く」運用を、職種別にお届けしています。</p>
+    <p class="also">住宅・工務店に加えて、<br>ブライダル(式場・フォト・プランナー)の<br>SNS・LINE集客にも対応しています。</p>
 
     <div class="stats">
+      <div class="stat"><b>15<i>年</i></b><span>ブライダル</span></div>
+      <div class="stat"><b>3<i>年</i></b><span>工務店勤務</span></div>
       <div class="stat"><b>5<i>年</i></b><span>住宅・工務店の<br>SNS運用</span></div>
       <div class="stat"><b>30<i>件+</i></b><span>運用実績</span></div>
-      <div class="stat"><b>IG</b><span>Instagram<br>集客の実績</span></div>
     </div>
 
     <a class="cta" href="https://line.me/R/ti/p/%40kwi2429j">
@@ -214,6 +232,8 @@
         <h3>Boar Book</h3>
         <p>住宅・工務店のSNS運用に5年間携わり、これまでに30件以上を担当してきました。Instagramからの集客にも取り組み、「見られる」だけでなく「問い合わせにつながる」運用を大切にしています。</p>
         <p>はじまりは、工務店に勤務していた頃に、HPとInstagramを独学で身につけたこと。大切にしているのは、会社様の想いです。その想いが、HPやSNSを見ただけで伝わるようにカタチにしています。</p>
+        <p>ブライダル業界で15年、新郎新婦さんの晴れ舞台を支える仕事をしてきました。お客様の言葉の奥にある想いや、小さな不安に寄り添う姿勢は、今のSNSやLINEの設計にも活かしています。</p>
+        <ul class="career"><li>ブライダル15年</li><li>工務店勤務3年</li><li>住宅・工務店のSNS運用5年</li><li>運用実績30件以上</li></ul>
       </div>
     </div>
   </div>
@@ -224,6 +244,7 @@
   <div class="wrap">
     <div class="ttl"><span class="en">Service</span><h2>できること</h2></div>
     <p class="svc-lead">業種・職種を問わず、会社やお店それぞれの<br>「らしさ」に合わせてご提案します。</p>
+    <div class="fields"><b>対応業種</b><ul><li>工務店・設計事務所・建築士</li><li>ブライダル(式場・フォト・プランナー)</li><li>サロンなどの小規模オーナー様</li></ul></div>
     <div class="svc">
       <div class="card">
         <span class="tag">運用代行</span>
@@ -250,6 +271,15 @@
         <span class="tag">note</span>
         <h3>職種別のSNS活用法</h3>
         <p>職種ごとの活用法をnoteで公開中。まずは自分で試してみたい方はこちらから。</p>
+      </div>
+    </div>
+    <div class="bridal">
+      <span class="tag">For Bridal</span>
+      <h3>ブライダルの方へ</h3>
+      <p>プレ花嫁さんの不安に寄り添う、SNS・LINEの集客のヒントを、noteで公開しています。</p>
+      <div class="btns">
+        <a class="note-btn" href="https://note.com/boarbook" target="_blank" rel="noopener">▼ ブライダルSNS集客の記事を読む</a>
+        <a class="line-btn" href="https://line.me/R/ti/p/%40kwi2429j">▼ 無料プレゼント<br>ブライダルSNS お試しセット</a>
       </div>
     </div>
   </div>
