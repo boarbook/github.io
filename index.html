@@ -196,11 +196,12 @@
       <div class="stat"><b>30<i>件+</i></b><span>運用実績</span></div>
     </div>
 
-    <a class="cta" href="https://line.me/R/ti/p/%40kwi2429j">
-      LINE登録で「SNS診断」を受け取る
-      <small>3分・無料 ／ 診断後に改善ヒントをお返しします</small>
+    <a class="cta" href="https://boarbook.github.io/sns-check/">
+      3分の無料SNS診断を受ける
+      <small>10問・LINE登録なしで、すぐ結果が分かります</small>
     </a>
-    <p class="cta-note">登録後すぐ、あいさつメッセージで診断が届きます</p>
+    <a class="sub-link" href="https://line.me/R/ti/p/%40kwi2429j">LINEで診断を受け取る(友だち追加)</a>
+    <p class="cta-note">診断のあと、結果をLINEに送ると、改善ヒントをお返しします</p>
   </div>
 </section>
 
@@ -375,5 +376,16 @@
   </div>
 </footer>
 
+<script>
+// クリックの記録(Googleアナリティクス)
+document.addEventListener("click", function(e){
+  var a = e.target.closest && e.target.closest("a[href]"); if (!a) return;
+  var h = a.getAttribute("href") || "";
+  var box = a.closest("header,section");
+  var place = box ? (box.className || box.tagName.toLowerCase()) : "other";
+  if (h.indexOf("line.me") > -1) gtag("event", "line_add_click", {place: place});
+  else if (h.indexOf("sns-check") > -1) gtag("event", "diagnosis_link_click", {place: place});
+}, true);
+</script>
 </body>
 </html>
